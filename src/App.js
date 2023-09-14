@@ -21,7 +21,7 @@ const App = () => {
         <span className="text-medium">
           {new Date().toLocaleTimeString()}, we're currenly open now.
         </span>
-        <button className="bg-yellow-500 rounded-full px-3 py-2 font-bold  text-gray-600">
+        <button className=" bg-yellow-500 hover:bg-yellow-600 transition-all rounded-full px-3 py-2 font-bold  text-gray-600">
           Order Now
         </button>
       </div>
