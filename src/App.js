@@ -17,7 +17,7 @@ const App = () => {
       <div className=" mt-6">
         <Menu />
       </div>
-      <div className="flex flex-col items-center justify-between gap-4">
+      <div className="flex flex-col items-center justify-between gap-5">
         <span className="text-medium">
           {new Date().toLocaleTimeString()}, we're currenly open now.
         </span>
