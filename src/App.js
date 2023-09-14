@@ -1,25 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+// Dependencies
+import React from "react";
+import Menu from "./Menu";
 
-function App() {
+const App = () => {
+  //   const hours = new Date().getHours();
+  //   const openHour = 12;
+  //   const closeHour = 22;
+  //   const isOpen = hours < closeHour && hours > openHour;
+  //  isOpen ? null : alert("Sorry we're currently not open !");
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className=" bg-gray-500">
+      <h1 className="text-5xl text-center text-yellow-400">
+        - FAST REACT PIZZA CO -
+      </h1>
+      <div className=" mt-6">
+        <Menu />
+      </div>
+      <div className="flex flex-col items-center justify-between gap-3">
+        <span className="text-medium">
+          {new Date().toLocaleTimeString()}, we're currenly open now.
+        </span>
+        <button className="bg-yellow-500 rounded-full px-3 py-2 font-bold  text-gray-600">
+          Order Now
+        </button>
+      </div>
     </div>
   );
-}
+};
 
 export default App;
